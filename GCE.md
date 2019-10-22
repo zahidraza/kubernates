@@ -17,5 +17,14 @@
 **Transfer file to GCP instance using SCP**
 
     scp -i ~/.ssh/my-ssh-key [LOCAL_FILE_PATH] [USERNAME]@[IP_ADDRESS]:~
+    
+    
+**List the disks that are attached to a instance**
 
+    sudo lsblk
+
+**Elavate to Sudo user**
+
+    sudo -i
+    
 
