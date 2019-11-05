@@ -27,4 +27,9 @@
 
     sudo -i
     
+    
+**Start Proxy to connect Cloud SQL**
+
+    ./cloud_sql_proxy -instances=<INSTANCE_CONNECTION_NAME>=tcp:5432
+    
 
