@@ -28,8 +28,12 @@
     sudo -i
     
     
-**Start Proxy to connect Cloud SQL**
+**To copy a remote directory, ~/narnia, from example-instance to the ~/wardrobe directory of your local host, run:**
 
-    ./cloud_sql_proxy -instances=<INSTANCE_CONNECTION_NAME>=tcp:5432
+    $ gcloud compute scp --recurse example-instance:~/narnia ~/wardrobe
+    
+**Conversely, files from your local computer can be copied to a virtual machine:**    
+
+    $ gcloud compute scp ~/localtest.txt ~/localtest2.txt example-instance:~/narnia
     
 
